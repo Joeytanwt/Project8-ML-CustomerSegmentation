@@ -1,4 +1,4 @@
-# Feature-Engineering-with-Python
+# Feature Engineering with Python
 ## Project Overview
 This project focuses on preparing a dataset for machine learning modelling. The goal was to transform raw survey data about career satisfaction into a scaled and balanced dataset ready for predictive modelling tasks.
 
