@@ -2,9 +2,8 @@
 ## Project Overview
 This project aims to analyze customer data from various sources to identify distinct customer segments. The process involves two phases:
 
-Data Cleaning and Anonymization: Consolidating and cleaning raw data from multiple files, handling inconsistencies, and anonymising sensitive information to create a unified, analysis-ready dataset.
-
-Customer Segmentation: Applying K-Means clustering to the cleaned data to uncover patterns and group customers into meaningful segments.
+* Data Cleaning and Anonymisation
+* Customer Segmentation with Sci-kit Learn clustering model
 
 ## Workflow
 ### 1: Data Cleaning and Anonymisation
