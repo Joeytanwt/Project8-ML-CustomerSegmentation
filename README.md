@@ -1,6 +1,6 @@
 # Customer Segmentation with Python
 ## Project Overview
-This project aims to analyze customer data from various sources to identify distinct customer segments. The process involves two phases:
+This project aims to analyse customer data from various sources to identify distinct customer segments. The process involves two phases:
 
 * Data Cleaning and Anonymisation
 * Customer Segmentation with Sci-kit Learn clustering model
@@ -19,9 +19,9 @@ This project aims to analyze customer data from various sources to identify dist
       
   * **Anonymization:**
     - To protect personal information, sensitive fields like "NRIC" and "MemberName" were replaced with an 8-character SHA-256 hash.
-    - "Birthdate" was generalized into "Birth Year" to reduce specificity while retaining its utility for age-based analysis.
+    - "Birthdate" was generalised into "Birth Year" to reduce specificity while retaining its utility for age-based analysis.
 
-Output: The final cleaned and anonymized dataset containing 1,501 records was exported to cleaned_data.xlsx for use in the clustering phase. A separate lookup.xlsx file was created to map the hashed values back to the original NRICs and names for internal reference.
+Output: The final cleaned and anonymised dataset containing 1,501 records was exported to cleaned_data.xlsx for use in the clustering phase. A separate lookup.xlsx file was created to map the hashed values back to the original NRICs and names for internal reference.
 
 ### 2: Part 2: Customer Segmentation using Clustering
   * **Feature Engineering:** New features were created:
@@ -29,11 +29,11 @@ Output: The final cleaned and anonymized dataset containing 1,501 records was ex
     - Years as Member: Calculated as 2025 - Year Joined.
       
   * **Data Transformation:**
-    - Binning: Continuous variables like "Age" and "Years as Member" were categorized into bins (e.g., "20s," "30s," and "0-10 years") to facilitate analysis.
+    - Binning: Continuous variables like "Age" and "Years as Member" were categorised into bins (e.g., "20s," "30s," and "0-10 years") to facilitate analysis.
     - Encoding: Categorical features, including the newly created bins and "Region," were converted into a numerical format using one-hot encoding.
-    - Scaling: All numerical features were standardized using StandardScaler to ensure that each feature contributes equally to the clustering model.
+    - Scaling: All numerical features were standardised using StandardScaler to ensure that each feature contributes equally to the clustering model.
 
-  * **Clustering:** The K-Means algorithm was applied to the preprocessed data to partition it into three distinct customer clusters.
+  * **Clustering:** The K-Means algorithm was applied to the data to partition it into three distinct customer clusters.
 
 ## Findings & Recommendations
 
@@ -41,7 +41,7 @@ The analysis revealed three primary customer segments :
 
 Cluster |	Segment Name | Characteristics | Recommendations
 ---|---|---|---|
-Cluster 2 | High-Value Customers | The smallest group, but the most valuable. They exhibit high purchase frequency and high spending.	| Implement loyalty programs with exclusive perks. Offer personalized products and actively gather their feedback.
+Cluster 2 | High-Value Customers | The smallest group, but the most valuable. They exhibit high purchase frequency and high spending.	| Implement loyalty programs with exclusive perks. Offer personalised products and actively gather their feedback.
 Cluster 1	| Core Customers | The largest segment. They have moderate income, purchase frequency, and spending, making them a consistent source of revenue. | Use targeted campaigns to increase their average order value. Cross-sell new products and encourage repeat business with a points-based system.
 Cluster 0 | At-Risk Customers | This group has low purchase frequency and spending despite having above-average incomes. A significant portion is from the USA. | Launch re-engagement campaigns. Use surveys to identify reasons for low engagement and develop regional activation plans.
 
